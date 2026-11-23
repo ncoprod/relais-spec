@@ -1,0 +1,20 @@
+{
+  "id": "fr-2026-001",
+  "firm": {"iso": "FR", "name": "Example member firm (fictitious)"},
+  "author": {"id": "a-example-01", "name": "Example Author", "service": "Indirect Tax"},
+  "date": "2026-09-01",
+  "valid_until": "2027-08-31",
+  "language": "en",
+  "jurisdictions": ["FR"],
+  "domains": ["vat"],
+  "question": "Format example only: how should a supply of type X between two companies be treated?",
+  "solution": "Format example only: the text below is invented and states no real rule.",
+  "passages": [
+    {"id": "p1", "text": "This passage is invented to show the format. In this fictitious case the supply is treated as type A."},
+    {"id": "p2", "text": "This passage is invented to show the format. The fictitious rate applied in this example is 10%."}
+  ],
+  "sources": [{"ref": "Fictitious reference"}],
+  "mode": "auto",
+  "anonymized": true,
+  "fictitious": true
+}

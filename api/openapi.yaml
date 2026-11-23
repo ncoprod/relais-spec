@@ -1,0 +1,142 @@
+openapi: 3.1.0
+info:
+  title: Relais API
+  version: 0.1.0
+  description: >
+    Contract between the Relais server and its clients (macOS, Windows, Outlook/Teams add-ins).
+    Clients hold no business logic: every decision (level, price, gate verdicts) comes from the server
+    and is written to an append-only audit log.
+paths:
+  /ask:
+    post:
+      summary: Ask a question. The server searches the memos and returns a level-1 answer or a level-2 route.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/AskRequest' }
+      responses:
+        '200':
+          description: Outcome
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AskResult' }
+  /ask/{ask_id}/validate:
+    post:
+      summary: The requester accepts the level-1 answer. Payments are written to the ledger.
+      parameters: [{ $ref: '#/components/parameters/AskId' }]
+      responses:
+        '200':
+          description: Ledger entries created
+          content:
+            application/json:
+              schema: { type: array, items: { $ref: '#/components/schemas/LedgerEntry' } }
+  /ask/{ask_id}/escalate:
+    post:
+      summary: Route the question to an expert (level 2). Only the difference with what was already paid is due.
+      parameters: [{ $ref: '#/components/parameters/AskId' }]
+      responses:
+        '200':
+          description: Level-2 request created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ExpertRequest' }
+  /ask/{ask_id}/audit:
+    get:
+      summary: Every event recorded for this question, in order (search, model call, gates, validation, payments).
+      parameters: [{ $ref: '#/components/parameters/AskId' }]
+      responses:
+        '200':
+          description: Audit trail
+          content:
+            application/json:
+              schema: { type: array, items: { $ref: '#/components/schemas/AuditEvent' } }
+  /authors/{author_id}/dashboard:
+    get:
+      summary: What an author sees - their memos, how often they were used, what they earned, level-2 requests.
+      parameters:
+        - { name: author_id, in: path, required: true, schema: { type: string } }
+      responses:
+        '200':
+          description: Dashboard
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AuthorDashboard' }
+components:
+  parameters:
+    AskId: { name: ask_id, in: path, required: true, schema: { type: string } }
+  schemas:
+    AskRequest:
+      type: object
+      required: [question, requester]
+      properties:
+        question: { type: string }
+        jurisdiction: { type: string, description: ISO code of the country whose law is asked about }
+        requester:
+          type: object
+          required: [id, firm_iso]
+          properties:
+            id: { type: string }
+            firm_iso: { type: string }
+    Citation:
+      type: object
+      required: [memo_id, passage_id, quote]
+      properties:
+        memo_id: { type: string }
+        passage_id: { type: string }
+        quote: { type: string, description: Exact words of the passage }
+    Sentence:
+      type: object
+      required: [text, citations]
+      properties:
+        text: { type: string }
+        citations: { type: array, items: { $ref: '#/components/schemas/Citation' } }
+    MemoRef:
+      type: object
+      properties:
+        id: { type: string }
+        firm_iso: { type: string }
+        author_id: { type: string }
+        author_name: { type: string }
+        date: { type: string, format: date }
+        mode: { enum: [auto, contact_only] }
+    AskResult:
+      type: object
+      required: [ask_id, level, price_eur]
+      properties:
+        ask_id: { type: string }
+        level: { enum: [N1, N2] }
+        answer: { type: array, items: { $ref: '#/components/schemas/Sentence' }, description: Present when level is N1 }
+        memos: { type: array, items: { $ref: '#/components/schemas/MemoRef' } }
+        escalation_reasons: { type: array, items: { type: string }, description: Why level 2 is proposed }
+        price_eur: { type: number, description: Price of the proposed level, before validation }
+    LedgerEntry:
+      type: object
+      properties:
+        ask_id: { type: string }
+        payer: { type: string }
+        payee: { type: string }
+        amount_eur: { type: number }
+        reason: { type: string }
+    ExpertRequest:
+      type: object
+      properties:
+        request_id: { type: string }
+        expert: { $ref: '#/components/schemas/MemoRef' }
+        price_eur: { type: number, description: Level-2 price minus what was already paid }
+    AuditEvent:
+      type: object
+      properties:
+        seq: { type: integer }
+        at: { type: string, format: date-time }
+        ask_id: { type: string }
+        kind: { type: string }
+        data: { type: object }
+    AuthorDashboard:
+      type: object
+      properties:
+        author_id: { type: string }
+        memos: { type: array, items: { $ref: '#/components/schemas/MemoRef' } }
+        uses: { type: integer }
+        earnings_eur: { type: number }
+        expert_requests: { type: integer }

@@ -1,0 +1,21 @@
+{
+  "note": "Flat list of Tax & Legal domains used to tag memos. Kept deliberately small: extend it when a real memo does not fit.",
+  "domains": [
+    {"code": "vat", "label": "VAT / GST and indirect taxes"},
+    {"code": "e_invoicing", "label": "E-invoicing and e-reporting"},
+    {"code": "corporate_income_tax", "label": "Corporate income tax"},
+    {"code": "withholding_tax", "label": "Withholding taxes"},
+    {"code": "transfer_pricing", "label": "Transfer pricing"},
+    {"code": "permanent_establishment", "label": "Permanent establishment"},
+    {"code": "tax_treaties", "label": "Double tax treaties"},
+    {"code": "pillar_two", "label": "Global minimum tax (Pillar Two)"},
+    {"code": "customs", "label": "Customs and excise"},
+    {"code": "tax_audit", "label": "Tax audits and disputes"},
+    {"code": "employment_tax", "label": "Payroll, social security and mobility"},
+    {"code": "data_protection", "label": "Data protection (GDPR and equivalents)"},
+    {"code": "corporate_law", "label": "Corporate law and governance"},
+    {"code": "employment_law", "label": "Employment law"},
+    {"code": "commercial_contracts", "label": "Commercial contracts"},
+    {"code": "m_and_a", "label": "M&A and restructuring"}
+  ]
+}

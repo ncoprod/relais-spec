@@ -1,0 +1,575 @@
+{
+  "source": "https://kpmg.com/content/experience-fragments/kpmgpublic/xx/en/site/rfp-form-location-selector-overlay/master.html",
+  "retrieved": "2026-11-23",
+  "note": "Countries and territories listed in the kpmg.com contact form selector. KPMG states that its firms operate in 138 countries and territories (June 2026), so this list is incomplete: add the missing ones when they are needed.",
+  "countries": [
+    {
+      "iso": "AL",
+      "name": "Albania",
+      "kpmg_site": "al"
+    },
+    {
+      "iso": "DZ",
+      "name": "Algeria",
+      "kpmg_site": "dz"
+    },
+    {
+      "iso": "AR",
+      "name": "Argentina",
+      "kpmg_site": "ar"
+    },
+    {
+      "iso": "AM",
+      "name": "Armenia",
+      "kpmg_site": "am"
+    },
+    {
+      "iso": "AU",
+      "name": "Australia",
+      "kpmg_site": "au"
+    },
+    {
+      "iso": "AT",
+      "name": "Austria",
+      "kpmg_site": "at"
+    },
+    {
+      "iso": "AZ",
+      "name": "Azerbaijan",
+      "kpmg_site": "az"
+    },
+    {
+      "iso": "BS",
+      "name": "Bahamas",
+      "kpmg_site": "bs"
+    },
+    {
+      "iso": "BH",
+      "name": "Bahrain",
+      "kpmg_site": "bh"
+    },
+    {
+      "iso": "BB",
+      "name": "Barbados",
+      "kpmg_site": "bb"
+    },
+    {
+      "iso": "BE",
+      "name": "Belgium",
+      "kpmg_site": "be"
+    },
+    {
+      "iso": "BM",
+      "name": "Bermuda",
+      "kpmg_site": "bm"
+    },
+    {
+      "iso": "BA",
+      "name": "Bosnia and Herzegovina",
+      "kpmg_site": "ba"
+    },
+    {
+      "iso": "BR",
+      "name": "Brazil",
+      "kpmg_site": "br"
+    },
+    {
+      "iso": "VG",
+      "name": "British Virgin Islands",
+      "kpmg_site": "vg"
+    },
+    {
+      "iso": "BG",
+      "name": "Bulgaria",
+      "kpmg_site": "bg"
+    },
+    {
+      "iso": "KH",
+      "name": "Cambodia",
+      "kpmg_site": "kh"
+    },
+    {
+      "iso": "CM",
+      "name": "Cameroon",
+      "kpmg_site": "cm"
+    },
+    {
+      "iso": "CA",
+      "name": "Canada",
+      "kpmg_site": "ca"
+    },
+    {
+      "iso": "KY",
+      "name": "Cayman Islands",
+      "kpmg_site": "ky"
+    },
+    {
+      "iso": "CL",
+      "name": "Chile",
+      "kpmg_site": "cl"
+    },
+    {
+      "iso": "CN",
+      "name": "China",
+      "kpmg_site": "cn"
+    },
+    {
+      "iso": "CO",
+      "name": "Colombia",
+      "kpmg_site": "co"
+    },
+    {
+      "iso": "CR",
+      "name": "Costa Rica",
+      "kpmg_site": "cr"
+    },
+    {
+      "iso": "HR",
+      "name": "Croatia",
+      "kpmg_site": "hr"
+    },
+    {
+      "iso": "CY",
+      "name": "Cyprus",
+      "kpmg_site": "cy"
+    },
+    {
+      "iso": "CZ",
+      "name": "Czech Republic",
+      "kpmg_site": "cz"
+    },
+    {
+      "iso": "DK",
+      "name": "Denmark",
+      "kpmg_site": "dk"
+    },
+    {
+      "iso": "EG",
+      "name": "Egypt",
+      "kpmg_site": "eg"
+    },
+    {
+      "iso": "EE",
+      "name": "Estonia",
+      "kpmg_site": "ee"
+    },
+    {
+      "iso": "FI",
+      "name": "Finland",
+      "kpmg_site": "fi"
+    },
+    {
+      "iso": "FR",
+      "name": "France",
+      "kpmg_site": "fr"
+    },
+    {
+      "iso": "GE",
+      "name": "Georgia",
+      "kpmg_site": "ge"
+    },
+    {
+      "iso": "DE",
+      "name": "Germany",
+      "kpmg_site": "de"
+    },
+    {
+      "iso": "GH",
+      "name": "Ghana",
+      "kpmg_site": "gh"
+    },
+    {
+      "iso": "GI",
+      "name": "Gibraltar",
+      "kpmg_site": "gi"
+    },
+    {
+      "iso": "GR",
+      "name": "Greece",
+      "kpmg_site": "gr"
+    },
+    {
+      "iso": "GG",
+      "name": "Guernsey",
+      "kpmg_site": "dp",
+      "note": "covered by KPMG Crown Dependencies"
+    },
+    {
+      "iso": "HK",
+      "name": "Hong Kong SAR",
+      "kpmg_site": "cn",
+      "note": "covered by KPMG China"
+    },
+    {
+      "iso": "HU",
+      "name": "Hungary",
+      "kpmg_site": "hu"
+    },
+    {
+      "iso": "IS",
+      "name": "Iceland",
+      "kpmg_site": "is"
+    },
+    {
+      "iso": "IN",
+      "name": "India",
+      "kpmg_site": "in"
+    },
+    {
+      "iso": "ID",
+      "name": "Indonesia",
+      "kpmg_site": "id"
+    },
+    {
+      "iso": "IE",
+      "name": "Ireland",
+      "kpmg_site": "ie"
+    },
+    {
+      "iso": "IM",
+      "name": "Isle of Man",
+      "kpmg_site": "dp",
+      "note": "covered by KPMG Crown Dependencies"
+    },
+    {
+      "iso": "IL",
+      "name": "Israel",
+      "kpmg_site": "il"
+    },
+    {
+      "iso": "IT",
+      "name": "Italy",
+      "kpmg_site": "it"
+    },
+    {
+      "iso": "CI",
+      "name": "Ivory Coast",
+      "kpmg_site": "ci"
+    },
+    {
+      "iso": "JM",
+      "name": "Jamaica",
+      "kpmg_site": "jm"
+    },
+    {
+      "iso": "JP",
+      "name": "Japan",
+      "kpmg_site": "jp"
+    },
+    {
+      "iso": "JE",
+      "name": "Jersey",
+      "kpmg_site": "dp",
+      "note": "covered by KPMG Crown Dependencies"
+    },
+    {
+      "iso": "JO",
+      "name": "Jordan",
+      "kpmg_site": "jo"
+    },
+    {
+      "iso": "KZ",
+      "name": "Kazakhstan",
+      "kpmg_site": "kz"
+    },
+    {
+      "iso": "KE",
+      "name": "Kenya",
+      "kpmg_site": "ke"
+    },
+    {
+      "iso": "KR",
+      "name": "Korea",
+      "kpmg_site": "kr"
+    },
+    {
+      "iso": "KW",
+      "name": "Kuwait",
+      "kpmg_site": "kw"
+    },
+    {
+      "iso": "LA",
+      "name": "Laos",
+      "kpmg_site": "la"
+    },
+    {
+      "iso": "LV",
+      "name": "Latvia",
+      "kpmg_site": "lv"
+    },
+    {
+      "iso": "LB",
+      "name": "Lebanon",
+      "kpmg_site": "lb"
+    },
+    {
+      "iso": "LT",
+      "name": "Lithuania",
+      "kpmg_site": "lt"
+    },
+    {
+      "iso": "LU",
+      "name": "Luxembourg",
+      "kpmg_site": "lu"
+    },
+    {
+      "iso": "MO",
+      "name": "Macau SAR",
+      "kpmg_site": "cn",
+      "note": "covered by KPMG China"
+    },
+    {
+      "iso": "MY",
+      "name": "Malaysia",
+      "kpmg_site": "my"
+    },
+    {
+      "iso": "MT",
+      "name": "Malta",
+      "kpmg_site": "mt"
+    },
+    {
+      "iso": "MU",
+      "name": "Mauritius",
+      "kpmg_site": "mu"
+    },
+    {
+      "iso": "MX",
+      "name": "Mexico",
+      "kpmg_site": "mx"
+    },
+    {
+      "iso": "MD",
+      "name": "Moldova",
+      "kpmg_site": "md"
+    },
+    {
+      "iso": "MC",
+      "name": "Monaco",
+      "kpmg_site": "mc"
+    },
+    {
+      "iso": "MN",
+      "name": "Mongolia",
+      "kpmg_site": "mn"
+    },
+    {
+      "iso": "ME",
+      "name": "Montenegro",
+      "kpmg_site": "me"
+    },
+    {
+      "iso": "ZA",
+      "name": "Mozambique",
+      "kpmg_site": "za"
+    },
+    {
+      "iso": "MM",
+      "name": "Myanmar",
+      "kpmg_site": "mm"
+    },
+    {
+      "iso": "NA",
+      "name": "Namibia",
+      "kpmg_site": "za",
+      "note": "listed under KPMG South Africa"
+    },
+    {
+      "iso": "NL",
+      "name": "Netherlands",
+      "kpmg_site": "nl"
+    },
+    {
+      "iso": "NZ",
+      "name": "New Zealand",
+      "kpmg_site": "nz"
+    },
+    {
+      "iso": "NG",
+      "name": "Nigeria",
+      "kpmg_site": "ng"
+    },
+    {
+      "iso": "MK",
+      "name": "North Macedonia",
+      "kpmg_site": "mk"
+    },
+    {
+      "iso": "NO",
+      "name": "Norway",
+      "kpmg_site": "no"
+    },
+    {
+      "iso": "OM",
+      "name": "Oman",
+      "kpmg_site": "om"
+    },
+    {
+      "iso": "PA",
+      "name": "Panama",
+      "kpmg_site": "pa"
+    },
+    {
+      "iso": "PG",
+      "name": "Papua New Guinea",
+      "kpmg_site": "pg"
+    },
+    {
+      "iso": "PE",
+      "name": "Peru",
+      "kpmg_site": "pe"
+    },
+    {
+      "iso": "PH",
+      "name": "Philippines",
+      "kpmg_site": "ph"
+    },
+    {
+      "iso": "PL",
+      "name": "Poland",
+      "kpmg_site": "pl"
+    },
+    {
+      "iso": "PT",
+      "name": "Portugal",
+      "kpmg_site": "pt"
+    },
+    {
+      "iso": "QA",
+      "name": "Qatar",
+      "kpmg_site": "qa"
+    },
+    {
+      "iso": "RO",
+      "name": "Romania",
+      "kpmg_site": "ro"
+    },
+    {
+      "iso": "SA",
+      "name": "Saudi Arabia",
+      "kpmg_site": "sa"
+    },
+    {
+      "iso": "RS",
+      "name": "Serbia",
+      "kpmg_site": "rs"
+    },
+    {
+      "iso": "SG",
+      "name": "Singapore",
+      "kpmg_site": "sg"
+    },
+    {
+      "iso": "SK",
+      "name": "Slovakia",
+      "kpmg_site": "sk"
+    },
+    {
+      "iso": "SI",
+      "name": "Slovenia",
+      "kpmg_site": "si"
+    },
+    {
+      "iso": "ES",
+      "name": "Spain",
+      "kpmg_site": "es"
+    },
+    {
+      "iso": "LK",
+      "name": "Sri Lanka",
+      "kpmg_site": "lk"
+    },
+    {
+      "iso": "SE",
+      "name": "Sweden",
+      "kpmg_site": "se"
+    },
+    {
+      "iso": "CH",
+      "name": "Switzerland",
+      "kpmg_site": "ch"
+    },
+    {
+      "iso": "TW",
+      "name": "Taiwan",
+      "kpmg_site": "tw"
+    },
+    {
+      "iso": "TH",
+      "name": "Thailand",
+      "kpmg_site": "th"
+    },
+    {
+      "iso": "TG",
+      "name": "Togo",
+      "kpmg_site": "tg"
+    },
+    {
+      "iso": "TT",
+      "name": "Trinidad and Tobago",
+      "kpmg_site": "tt"
+    },
+    {
+      "iso": "TN",
+      "name": "Tunisia",
+      "kpmg_site": "tn"
+    },
+    {
+      "iso": "TR",
+      "name": "Turkey",
+      "kpmg_site": "tr"
+    },
+    {
+      "iso": "UA",
+      "name": "Ukraine",
+      "kpmg_site": "ua"
+    },
+    {
+      "iso": "AE",
+      "name": "United Arab Emirates",
+      "kpmg_site": "ae"
+    },
+    {
+      "iso": "GB",
+      "name": "United Kingdom",
+      "kpmg_site": "uk"
+    },
+    {
+      "iso": "US",
+      "name": "United States",
+      "kpmg_site": "us"
+    },
+    {
+      "iso": "UY",
+      "name": "Uruguay",
+      "kpmg_site": "uy"
+    },
+    {
+      "iso": "UZ",
+      "name": "Uzbekistan",
+      "kpmg_site": "uz"
+    },
+    {
+      "iso": "VE",
+      "name": "Venezuela",
+      "kpmg_site": "ve"
+    },
+    {
+      "iso": "VN",
+      "name": "Vietnam",
+      "kpmg_site": "vn"
+    },
+    {
+      "iso": "ZM",
+      "name": "Zambia",
+      "kpmg_site": "za",
+      "note": "listed under KPMG South Africa"
+    },
+    {
+      "iso": "ZW",
+      "name": "Zimbabwe",
+      "kpmg_site": "za",
+      "note": "listed under KPMG South Africa"
+    }
+  ]
+}
