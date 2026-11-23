@@ -20,9 +20,11 @@ def main(extra_dirs):
     Draft202012Validator.check_schema(schema)
     validator = Draft202012Validator(schema, format_checker=FormatChecker())
 
-    countries = [c["iso"] for c in load(ROOT / "taxonomy/countries.json")["countries"]]
+    country_list = load(ROOT / "taxonomy/countries.json")["countries"]
+    countries = [c["iso"] for c in country_list]
+    names = [c["name"] for c in country_list]
     domains = [d["code"] for d in load(ROOT / "taxonomy/domains.json")["domains"]]
-    for name, codes in (("country", countries), ("domain", domains)):
+    for name, codes in (("country", countries), ("country name", names), ("domain", domains)):
         dup = {c for c in codes if codes.count(c) > 1}
         if dup:
             errors.append(f"duplicate {name} codes: {sorted(dup)}")
