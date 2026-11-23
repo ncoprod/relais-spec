@@ -1,7 +1,7 @@
 {
   "source": "https://kpmg.com/content/experience-fragments/kpmgpublic/xx/en/site/rfp-form-location-selector-overlay/master.html",
   "retrieved": "2026-11-23",
-  "note": "Countries and territories listed in the kpmg.com contact form selector. KPMG states that its firms operate in 138 countries and territories (June 2026), so this list is incomplete: add the missing ones when they are needed.",
+  "note": "112 entries come from the kpmg.com contact-form location selector; the others were added on 2026-11-23 from KPMG regional sites (East Africa, Southern Africa, Afrique Centrale, Barbados/CARICOM) and member-firm sites. KPMG states 138 countries and territories (FY25/June 2026); Pakistan and Bangladesh now redirect to the global site and are left out until confirmed.",
   "countries": [
     {
       "iso": "AL",
@@ -12,6 +12,23 @@
       "iso": "DZ",
       "name": "Algeria",
       "kpmg_site": "dz"
+    },
+    {
+      "iso": "AO",
+      "name": "Angola",
+      "kpmg_site": "https://kpmg.com/ao/pt.html"
+    },
+    {
+      "iso": "AI",
+      "name": "Anguilla",
+      "kpmg_site": "https://kpmg.com/bb/en.html",
+      "note": "Served from Barbados, no local office"
+    },
+    {
+      "iso": "AG",
+      "name": "Antigua and Barbuda",
+      "kpmg_site": "https://kpmg.com/bb/en.html",
+      "note": "Served by KPMG Barbados and Eastern Caribbean"
     },
     {
       "iso": "AR",
@@ -67,6 +84,12 @@
       "iso": "BA",
       "name": "Bosnia and Herzegovina",
       "kpmg_site": "ba"
+    },
+    {
+      "iso": "BW",
+      "name": "Botswana",
+      "kpmg_site": "https://kpmg.com/za/en.html",
+      "note": "Served by KPMG South Africa (Southern Africa)"
     },
     {
       "iso": "BR",
@@ -139,9 +162,25 @@
       "kpmg_site": "cz"
     },
     {
+      "iso": "CD",
+      "name": "Democratic Republic of the Congo",
+      "kpmg_site": "https://kpmg.com/cd/fr.html"
+    },
+    {
       "iso": "DK",
       "name": "Denmark",
       "kpmg_site": "dk"
+    },
+    {
+      "iso": "DM",
+      "name": "Dominica",
+      "kpmg_site": "https://kpmg.com/bb/en.html",
+      "note": "Served from Barbados, no local office"
+    },
+    {
+      "iso": "DO",
+      "name": "Dominican Republic",
+      "kpmg_site": "https://kpmg.com/do/es.html"
     },
     {
       "iso": "EG",
@@ -149,9 +188,19 @@
       "kpmg_site": "eg"
     },
     {
+      "iso": "SV",
+      "name": "El Salvador",
+      "kpmg_site": "https://kpmg.com/sv/es.html"
+    },
+    {
       "iso": "EE",
       "name": "Estonia",
       "kpmg_site": "ee"
+    },
+    {
+      "iso": "FJ",
+      "name": "Fiji",
+      "kpmg_site": "https://kpmg.com/fj/en.html"
     },
     {
       "iso": "FI",
@@ -162,6 +211,12 @@
       "iso": "FR",
       "name": "France",
       "kpmg_site": "fr"
+    },
+    {
+      "iso": "GA",
+      "name": "Gabon",
+      "kpmg_site": "https://kpmg.com/cm/fr.html",
+      "note": "Served by KPMG Afrique Centrale"
     },
     {
       "iso": "GE",
@@ -189,10 +244,31 @@
       "kpmg_site": "gr"
     },
     {
+      "iso": "GD",
+      "name": "Grenada",
+      "kpmg_site": "https://kpmg.com/bb/en.html",
+      "note": "Served from Barbados, no local office"
+    },
+    {
+      "iso": "GT",
+      "name": "Guatemala",
+      "kpmg_site": "https://kpmg.com/gt/es.html"
+    },
+    {
       "iso": "GG",
       "name": "Guernsey",
       "kpmg_site": "dp",
       "note": "covered by KPMG Crown Dependencies"
+    },
+    {
+      "iso": "GY",
+      "name": "Guyana",
+      "kpmg_site": "https://kpmg.com/gy/en.html"
+    },
+    {
+      "iso": "HN",
+      "name": "Honduras",
+      "kpmg_site": "https://kpmg.com/hn/es.html"
     },
     {
       "iso": "HK",
@@ -303,6 +379,12 @@
       "kpmg_site": "lb"
     },
     {
+      "iso": "LI",
+      "name": "Liechtenstein",
+      "kpmg_site": "https://kpmg.com/ch/en.html",
+      "note": "KPMG (Liechtenstein) AG"
+    },
+    {
       "iso": "LT",
       "name": "Lithuania",
       "kpmg_site": "lt"
@@ -359,9 +441,21 @@
       "kpmg_site": "me"
     },
     {
+      "iso": "MS",
+      "name": "Montserrat",
+      "kpmg_site": "https://kpmg.com/bb/en.html",
+      "note": "Served from Barbados, no local office"
+    },
+    {
       "iso": "ZA",
       "name": "Mozambique",
       "kpmg_site": "za"
+    },
+    {
+      "iso": "MZ",
+      "name": "Mozambique",
+      "kpmg_site": "https://kpmg.com/za/en.html",
+      "note": "Served by KPMG South Africa (Southern Africa)"
     },
     {
       "iso": "MM",
@@ -383,6 +477,11 @@
       "iso": "NZ",
       "name": "New Zealand",
       "kpmg_site": "nz"
+    },
+    {
+      "iso": "NI",
+      "name": "Nicaragua",
+      "kpmg_site": "https://kpmg.com/ni/es.html"
     },
     {
       "iso": "NG",
@@ -445,9 +544,38 @@
       "kpmg_site": "ro"
     },
     {
+      "iso": "RW",
+      "name": "Rwanda",
+      "kpmg_site": "https://kpmg.com/ke/en.html",
+      "note": "Served by KPMG East Africa"
+    },
+    {
+      "iso": "KN",
+      "name": "Saint Kitts and Nevis",
+      "kpmg_site": "https://kpmg.com/bb/en.html",
+      "note": "Served from Barbados, no local office"
+    },
+    {
+      "iso": "LC",
+      "name": "Saint Lucia",
+      "kpmg_site": "https://kpmg.com/bb/en.html",
+      "note": "Served by KPMG Barbados and Eastern Caribbean"
+    },
+    {
+      "iso": "VC",
+      "name": "Saint Vincent and the Grenadines",
+      "kpmg_site": "https://kpmg.com/bb/en.html",
+      "note": "Served by KPMG Barbados and Eastern Caribbean"
+    },
+    {
       "iso": "SA",
       "name": "Saudi Arabia",
       "kpmg_site": "sa"
+    },
+    {
+      "iso": "SN",
+      "name": "Senegal",
+      "kpmg_site": "https://kpmg.com/sn/fr.html"
     },
     {
       "iso": "RS",
@@ -495,6 +623,12 @@
       "kpmg_site": "tw"
     },
     {
+      "iso": "TZ",
+      "name": "Tanzania",
+      "kpmg_site": "https://kpmg.com/ke/en.html",
+      "note": "Served by KPMG East Africa"
+    },
+    {
       "iso": "TH",
       "name": "Thailand",
       "kpmg_site": "th"
@@ -518,6 +652,12 @@
       "iso": "TR",
       "name": "Turkey",
       "kpmg_site": "tr"
+    },
+    {
+      "iso": "UG",
+      "name": "Uganda",
+      "kpmg_site": "https://kpmg.com/ke/en.html",
+      "note": "Served by KPMG East Africa"
     },
     {
       "iso": "UA",
