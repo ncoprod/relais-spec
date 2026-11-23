@@ -51,6 +51,19 @@ paths:
           content:
             application/json:
               schema: { type: array, items: { $ref: '#/components/schemas/AuditEvent' } }
+  /memos/{memo_id}:
+    get:
+      summary: A memo in full. For a contact-only memo, only its reference is returned (no solution, no passages).
+      parameters:
+        - { name: memo_id, in: path, required: true, schema: { type: string } }
+      responses:
+        '200': { description: Memo (relais-spec/schema/memo.schema.json, possibly reduced) }
+        '404': { description: Unknown memo }
+  /health:
+    get:
+      summary: Provider in use, number of memos, and whether the audit log chain is intact.
+      responses:
+        '200': { description: Health }
   /authors/{author_id}/dashboard:
     get:
       summary: What an author sees - their memos, how often they were used, what they earned, level-2 requests.
@@ -98,8 +111,16 @@ components:
         firm_iso: { type: string }
         author_id: { type: string }
         author_name: { type: string }
+        author_service: { type: string }
         date: { type: string, format: date }
+        valid_until: { type: string, format: date }
         mode: { enum: [auto, contact_only] }
+        question: { type: string }
+        jurisdictions: { type: array, items: { type: string } }
+        domains: { type: array, items: { type: string } }
+        score: { type: integer, description: Share of the search terms found in the memo (0-100) }
+        matched_terms: { type: array, items: { type: string } }
+        why: { type: string, description: "Model's one-line reason this memo matches. Not checked against the memo, so never contains figures." }
     AskResult:
       type: object
       required: [ask_id, level, price_eur]
@@ -110,6 +131,7 @@ components:
         memos: { type: array, items: { $ref: '#/components/schemas/MemoRef' } }
         escalation_reasons: { type: array, items: { type: string }, description: Why level 2 is proposed }
         price_eur: { type: number, description: Price of the proposed level, before validation }
+        jurisdiction: { type: string, description: Country searched (given by the requester or inferred from the question) }
     LedgerEntry:
       type: object
       properties:
@@ -122,7 +144,7 @@ components:
       type: object
       properties:
         request_id: { type: string }
-        expert: { $ref: '#/components/schemas/MemoRef' }
+        expert_author_id: { type: string }
         price_eur: { type: number, description: Level-2 price minus what was already paid }
     AuditEvent:
       type: object
