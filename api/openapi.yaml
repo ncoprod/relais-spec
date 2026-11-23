@@ -53,9 +53,13 @@ paths:
               schema: { type: array, items: { $ref: '#/components/schemas/AuditEvent' } }
   /memos/{memo_id}:
     get:
-      summary: A memo in full. For a contact-only memo, only its reference is returned (no solution, no passages).
+      summary: >
+        A memo in full, only once paid for (an auto memo cited in a validated level-1 answer of ask_id).
+        Otherwise only its reference: no solution, no passages, and for a contact-only memo not even the question.
+        No authentication in the MVP; SSO is required before real use.
       parameters:
         - { name: memo_id, in: path, required: true, schema: { type: string } }
+        - { name: ask_id, in: query, required: false, schema: { type: string } }
       responses:
         '200': { description: Memo (relais-spec/schema/memo.schema.json, possibly reduced) }
         '404': { description: Unknown memo }
@@ -106,6 +110,7 @@ components:
         citations: { type: array, items: { $ref: '#/components/schemas/Citation' } }
     MemoRef:
       type: object
+      description: For a contact-only memo, question, score, matched_terms and why are left out.
       properties:
         id: { type: string }
         firm_iso: { type: string }
@@ -154,6 +159,8 @@ components:
         ask_id: { type: string }
         kind: { type: string }
         data: { type: object }
+        prev: { type: string, description: Hash of the previous event ("genesis" for the first) }
+        hash: { type: string, description: sha256 of prev, time, ask id, kind and data }
     AuthorDashboard:
       type: object
       properties:
