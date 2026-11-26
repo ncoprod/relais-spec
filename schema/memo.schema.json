@@ -20,7 +20,8 @@
       "properties": {
         "id": { "type": "string" },
         "name": { "type": "string" },
-        "service": { "type": "string", "description": "Team or department, e.g. Indirect Tax" }
+        "service": { "type": "string", "description": "Team or department, e.g. Indirect Tax" },
+        "email": { "type": "string", "format": "email", "description": "Work address, shown to a colleague who wants to reach the author when no memo answers (level 2)" }
       }
     },
     "date": { "type": "string", "format": "date" },
